@@ -1,3 +1,4 @@
+//Upload Files
 var canvas = document.getElementById('canvas');
 console.log('model loaded');
 document.getElementById('inp').onchange = function(e) {
@@ -18,6 +19,8 @@ function failed() {
     console.error("The provided file couldn't be loaded as an Image media");
 }
 
+
+//Clear Button
 const clearButton = document.getElementById("clear");
 clearButton.onclick = () => {
     var ctx = canvas.getContext('2d');
@@ -25,6 +28,8 @@ clearButton.onclick = () => {
     document.getElementById("result").innerHTML = "";
 }
 
+
+//Predict Button 
 var classInfo;
 document.getElementById("down").disabled = true;
 const img = document.getElementById("canvas");
@@ -61,6 +66,8 @@ runButton.onclick = async() => {
     }
 }
 
+
+//Download Button 
 var dwn_btn = document.getElementById("down");
 dwn_btn.onclick = () => {
     var ctx = canvas.getContext("2d");
