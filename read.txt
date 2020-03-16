@@ -1,0 +1,14 @@
+Notes
+
+1. Tensorflow.js cocoSSD model is used in this project. We can also train a model ourselves and 
+use it for object detection.(I have trained a model in keras to guess the user designed doodles. I 
+converted this model to tensorflow.js and used it on the website. https://aniketdogra.github.io/doodler)
+
+2. The website prediction is slow for 1st image as the model is being loaded and the model is big. After 
+that subsequent predictions are very fast.
+
+3. Enable caching for better performance or else the model will download everytime you make a prediction(I 
+am working on this.)
+
+4. The bounding box data is currently being outputed to the console. If required this data can be shown on 
+the website.

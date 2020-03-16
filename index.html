@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js">
+    </script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd">
+    </script>
+    <script type="text/javascript" src="jszip.js"></script>
+    <script type="text/javascript" src="FileSaver.js"></script>
+    <title>Code Challenge</title>
+</head>
+
+<body>
+    <h1>Upload Image and Enter object that you want to detect</h1>
+    <canvas id="canvas" width="500" height="400"></canvas><br>
+    <input type="file" id="inp"></input><br> Enter class name
+    <input type="text" id="txt_input"><a href="https://github.com/AniketDogra/AniketDogra.github.io/blob/master/interest_extract/classes.txt">See classes supported</a><br>
+    <button id="run">Predict</button>
+    <button id="down">Download</button>
+    <button id="clear">Clear</button><br>
+    <h3 id="result"></h3><br>
+    <script src="script.js"></script>
+</body>
+
+</html>
