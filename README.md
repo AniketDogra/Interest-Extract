@@ -36,3 +36,6 @@ Detecting multiple objects in image
 
 ![](images/multiple_dogs.PNG?raw=true)
 <br>
+
+
+JS Library used - Filesaver, JSZIP
